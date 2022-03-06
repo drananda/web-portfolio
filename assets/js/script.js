@@ -45,6 +45,7 @@ if(modalBox){
 if(galleryItem){
     galleryItem.forEach(function(el){
         el.addEventListener('click', function(){
+            modalBox.querySelector('a').href=this.querySelector('.link').innerHTML;
             modalBox.classList.toggle('active');
             modalBox.querySelector('.img-container img').src=this.querySelector('.img-container img').src;
             modalBox.querySelector('.title h1').innerHTML=this.querySelector('.title').innerHTML;
