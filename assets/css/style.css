@@ -151,6 +151,46 @@ nav.navbar .nav-list .nav-item.active{
     margin: 1rem 0;
 }
 
+footer{
+    border-top: solid 2px rgb(40, 40, 40);
+    margin-top: 2em;
+    font-size: 10pt;
+}
+footer .about{
+    padding: 1em;
+}
+footer .about div{
+    width: max-content;
+    margin: 0 auto;
+    text-align: center;
+}
+footer .about div h2{
+    padding: 0.5em;
+}
+footer .about div ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 0.5em;
+}
+footer .about div a{
+    color: black;
+}
+footer .about div a:hover{
+    color: grey;
+}
+footer .copyright{
+    background-color: rgb(40, 40, 40);
+    color: white;
+    text-align: center;
+    padding: 0.5em 0;
+}
+footer .icon{
+    width: 2em;
+}
+.link{
+    display: none;
+}
+
 @keyframes fade {
     from{
         opacity: 0;
@@ -213,6 +253,9 @@ nav.navbar .nav-list .nav-item.active{
     .about-me{
         margin-top: 8rem;
     }
+    .about-me .title{
+        font-size: 25pt;
+    }
     .about-me .content{
         display: flex;
     }
@@ -236,6 +279,13 @@ nav.navbar .nav-list .nav-item.active{
     }
     .about-me .expand-description{
         display: none;
+    }
+
+    footer .about{
+        display: flex;
+    }
+    footer div{
+        flex: 1;
     }
 }
 
